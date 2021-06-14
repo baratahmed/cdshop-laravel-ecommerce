@@ -1,0 +1,53 @@
+
+/** ADD YOUR AWESOME CODES HERE **/
+
+
+.mask-icon a.cart{
+    background: #d33b33;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #ffffff;
+}
+.mask-icon a.cart:hover{
+    background: #010101;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.mask-icon input.cart{
+    position: absolute;
+    bottom: 0;
+    right: 0px;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #000000;
+}
+.mask-icon input.cart:hover{
+background: #010101;
+color: #ffffff;
+cursor: pointer;
+}
+.mask-icon a.view{
+    background: #46c2e0;
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    padding: 10px 20px;
+    font-weight: 700;
+    color: #3f0377;
+}
+.mask-icon a.view:hover{
+    background: #010101;
+    color: #ffffff;
+}
+.mask-icon ul li a:hover{
+    background: #010101;
+    color: #ffffff;
+}
+.viewww{
+    background: #46c2e0;
+    color: #3f0377;
+}

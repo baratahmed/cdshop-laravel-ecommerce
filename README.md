@@ -12,6 +12,9 @@ CDSHOP is an open source Ecommerce Platform management system using Laravel.
 ## Packeages Used
 - SSL Commerz 
 - Shopping Cart
+- Laravel Debugbar
+- Laravel IDE Helper
+- Image Intervention
 
 ## Installation Instructions
 
