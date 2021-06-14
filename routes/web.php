@@ -25,12 +25,12 @@ use Illuminate\Support\Facades\Route;
 
 //You can use both way for laravel 8
 //Route::match(['get', 'post'], '/', 'App\Http\Controllers\IndexController@index');  //1
-Route::match(['get', 'post'], '/', [IndexController::class, 'index']);     //2
+Route::match(['get', 'post'], '/', [IndexController::class, 'index'])->name('/');     //2
 Route::get('/product/details/{id}', [IndexController::class, 'productDetails'])->name('product.details');     //2
-Route::get('/get/product/price', [IndexController::class, 'getProductPrice'])->name('product.price');     //2
-Route::get('/categories/{id}', [IndexController::class, 'categories'])->name('categories');     //2
+Route::post('/get/product/price', [IndexController::class, 'getProductPrice'])->name('product.price');     //2
+Route::get('/categories/proructs/{id}', [IndexController::class, 'categories'])->name('categories');     //2
 
-Route::match(['get', 'post'],'/admin', [AdminController::class, 'login'])->name('admin.login');
+Route::match(['get', 'post'],'/admin/login', [AdminController::class, 'login'])->name('admin.login');
 
 Route::group(['middleware' => ['auth'],'prefix'=>'admin'],function () {
     Route::match(['get', 'post'], '/dashboard', [AdminController::class, 'dashboard'])->name('admin.dashboard');

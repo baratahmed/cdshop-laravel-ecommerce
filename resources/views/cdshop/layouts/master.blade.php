@@ -8,6 +8,7 @@
 
     <!-- Mobile Metas -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <!-- Site Metas -->
     <title>@yield('title')</title>
@@ -78,7 +79,10 @@
                 //alert("Test");
                 var idSize = $(this).val();
                 $.ajax({
-                    type: 'get',
+                    headers: {
+                                'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
+                    },
+                    type: 'post',
                     url: '/get/product/price',
                     data:{
                         idSize:idSize
@@ -89,7 +93,7 @@
 
                     },
                     error:function(error){
-                        alert('Try Aggain');
+                        alert('Try Again');
                     }
                 });
             });

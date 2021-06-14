@@ -122,7 +122,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/products/update-product-status',
+                            url: '/admin/products/update-product-status',
                             data:{
                                 status: '1',
                                 id: id,
@@ -143,7 +143,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/products/update-product-status',
+                            url: '/admin/products/update-product-status',
                             data:{
                                 status: '0',
                                 id: id,
@@ -169,7 +169,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/products/update-featured-status',
+                            url: '/admin/products/update-featured-status',
                             data:{
                                 status: '1',
                                 id: id,
@@ -190,7 +190,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/products/update-featured-status',
+                            url: '/admin/products/update-featured-status',
                             data:{
                                 status: '0',
                                 id: id,
@@ -216,7 +216,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/categories/update-category-status',
+                            url: '/admin/categories/update-category-status',
                             data:{
                                 status: '1',
                                 id: id,
@@ -237,7 +237,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/categories/update-category-status',
+                            url: '/admin/categories/update-category-status',
                             data:{
                                 status: '0',
                                 id: id,
@@ -263,7 +263,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/banners/update-banner-status',
+                            url: '/admin/banners/update-banner-status',
                             data:{
                                 status: '1',
                                 id: id,
@@ -284,7 +284,7 @@
                                 'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
                             },
                             type: 'post',
-                            url: '/banners/update-banner-status',
+                            url: '/admin/banners/update-banner-status',
                             data:{
                                 status: '0',
                                 id: id,

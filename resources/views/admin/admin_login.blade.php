@@ -41,7 +41,7 @@
                         </div>
                     </div>
                     <div class="panel-body">
-                        <form action="{{ url('admin') }}" method="POST" id="loginForm" novalidate>
+                        <form action="{{ route('admin.login') }}" method="POST" id="loginForm" novalidate>
                             @csrf
                             <div class="form-group">
                                 <label class="control-label" for="username">Username</label>
